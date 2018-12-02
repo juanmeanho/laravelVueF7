@@ -1,0 +1,42 @@
+Simple
+
+git clone https://github.com/framework7io/framework7-template-vue-simple my-app &&
+cd my-app &&
+npm install &&
+npm run serve
+
+Webpack
+
+One command install
+git clone https://github.com/framework7io/framework7-template-vue-webpack my-app &&
+cd my-app &&
+npm install &&
+npm run dev
+Build Setup
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for development
+npm run build-dev
+
+# build for production with minification
+npm run build-prod
+
+Cordova
+
+npm install -g cordova
+
+cordova create greeter com.example.greeter Greeter
+
+cd greeter
+
+cordova platform add android
+
+cordova platform add ios
+cordova platform add blackberry10
+cordova platform add firefoxos
+
+cordova build android
