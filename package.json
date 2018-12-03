@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "framework7": "^3.5.2",
+        "framework7-icons": "^2.0.5",
         "framework7-vue": "^3.5.2",
         "vue-router": "^3.0.2"
     }

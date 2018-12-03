@@ -32744,8 +32744,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_framework7_vue_framework7_vue_esm_bundle_js__ = __webpack_require__(290);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_framework7_css_framework7_css__ = __webpack_require__(360);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_framework7_css_framework7_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_framework7_css_framework7_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_vue__ = __webpack_require__(365);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__app_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__css_icons_css__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__css_icons_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__css_icons_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__css_app_css__ = __webpack_require__(392);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__css_app_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__css_app_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_vue__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__app_vue__);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -32778,6 +32782,10 @@ Vue.component('Home', __webpack_require__(41));
 // Import F7 Styles
 
 
+// Import Icons and App Custom Styles
+
+
+
 // Init F7 Vue Plugin
 __WEBPACK_IMPORTED_MODULE_0_framework7_framework7_esm_bundle_js__["a" /* default */].use(__WEBPACK_IMPORTED_MODULE_1_framework7_vue_framework7_vue_esm_bundle_js__["a" /* default */]);
 
@@ -32793,7 +32801,7 @@ var app = new Vue({
   el: '#app',
 
   render: function render(h) {
-    return h(__WEBPACK_IMPORTED_MODULE_3__app_vue___default.a);
+    return h(__WEBPACK_IMPORTED_MODULE_5__app_vue___default.a);
   }
 
 });
@@ -55191,9 +55199,7 @@ var render = function() {
             1
           ),
           _vm._v(" "),
-          _c("f7-nav-title", { attrs: { subtitle: "" } }, [
-            _vm._v("My App Webpackkk")
-          ]),
+          _c("f7-nav-title", [_vm._v("My App Webpack")]),
           _vm._v(" "),
           _c(
             "f7-nav-right",
@@ -98263,6 +98269,172 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 388 */,
+/* 389 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(390);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(363)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./icons.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./icons.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 390 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var escape = __webpack_require__(391);
+exports = module.exports = __webpack_require__(362)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/* Material Icons Font (for MD theme) */\r\n@font-face {\r\n  font-family: 'Material Icons';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  src: url(" + escape(__webpack_require__(398)) + "); /* For IE6-8 */\r\n  src: local('Material Icons'),\r\n       local('MaterialIcons-Regular'),\r\n       url(" + escape(__webpack_require__(399)) + ") format('woff2'),\r\n       url(" + escape(__webpack_require__(400)) + ") format('woff'),\r\n       url(" + escape(__webpack_require__(401)) + ") format('truetype');\r\n}\r\n\r\n.material-icons {\r\n  font-family: 'Material Icons';\r\n  font-weight: normal;\r\n  font-style: normal;\r\n  font-size: 24px;  /* Preferred icon size */\r\n  display: inline-block;\r\n  line-height: 1;\r\n  text-transform: none;\r\n  letter-spacing: normal;\r\n  word-wrap: normal;\r\n  white-space: nowrap;\r\n  direction: ltr;\r\n\r\n  /* Support for all WebKit browsers. */\r\n  -webkit-font-smoothing: antialiased;\r\n  /* Support for Safari and Chrome. */\r\n  text-rendering: optimizeLegibility;\r\n\r\n  /* Support for Firefox. */\r\n  -moz-osx-font-smoothing: grayscale;\r\n\r\n  /* Support for IE. */\r\n  font-feature-settings: 'liga';\r\n}\r\n\r\n/* Framework7 Icons Font (for iOS theme) */\r\n@font-face {\r\n  font-family: 'Framework7 Icons';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  src: url(" + escape(__webpack_require__(402)) + ");\r\n  src: url(" + escape(__webpack_require__(403)) + ") format(\"woff2\"),\r\n       url(" + escape(__webpack_require__(404)) + ") format(\"woff\"),\r\n       url(" + escape(__webpack_require__(405)) + ") format(\"truetype\");\r\n}\r\n\r\n.f7-icons {\r\n  font-family: 'Framework7 Icons';\r\n  font-weight: normal;\r\n  font-style: normal;\r\n  font-size: 25px;\r\n  line-height: 1;\r\n  letter-spacing: normal;\r\n  text-transform: none;\r\n  display: inline-block;\r\n  white-space: nowrap;\r\n  word-wrap: normal;\r\n  direction: ltr;\r\n  -webkit-font-smoothing: antialiased;\r\n  text-rendering: optimizeLegibility;\r\n  -moz-osx-font-smoothing: grayscale;\r\n  -webkit-font-feature-settings: \"liga\";\r\n  -moz-font-feature-settings: \"liga=1\";\r\n  -moz-font-feature-settings: \"liga\";\r\n  font-feature-settings: \"liga\";\r\n  text-align: center;\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 391 */
+/***/ (function(module, exports) {
+
+module.exports = function escape(url) {
+    if (typeof url !== 'string') {
+        return url
+    }
+    // If url is already wrapped in quotes, remove them
+    if (/^['"].*['"]$/.test(url)) {
+        url = url.slice(1, -1);
+    }
+    // Should url be wrapped?
+    // See https://drafts.csswg.org/css-values-3/#urls
+    if (/["'() \t\n]/.test(url)) {
+        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
+    }
+
+    return url
+}
+
+
+/***/ }),
+/* 392 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(393);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(363)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./app.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./app.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 393 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(362)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/* Your app styles here */", ""]);
+
+// exports
+
+
+/***/ }),
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/MaterialIcons-Regular.eot?e79bfd88537def476913f3ed52f4f4b3";
+
+/***/ }),
+/* 399 */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/MaterialIcons-Regular.woff2?570eb83859dc23dd0eec423a49e147fe";
+
+/***/ }),
+/* 400 */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/MaterialIcons-Regular.woff?012cf6a10129e2275d79d6adac7f3b02";
+
+/***/ }),
+/* 401 */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/MaterialIcons-Regular.ttf?a37b0c01c0baf1888ca812cc0508f6e2";
+
+/***/ }),
+/* 402 */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/Framework7Icons-Regular.eot?c0087d4d5ddd32ec52f1859b42956db6";
+
+/***/ }),
+/* 403 */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/Framework7Icons-Regular.woff2?ae8767ca8ecf4b090af58eff5dd6d3a7";
+
+/***/ }),
+/* 404 */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/Framework7Icons-Regular.woff?2e9a0313ed02aed1e206340feb36ec5c";
+
+/***/ }),
+/* 405 */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/Framework7Icons-Regular.ttf?4348368ab857cb57b18e1a87ba8ff284";
 
 /***/ })
 /******/ ]);
